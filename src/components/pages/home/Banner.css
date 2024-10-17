@@ -1,0 +1,39 @@
+.slider-container {
+  position: relative;
+}
+
+.slide {
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-1 {
+  background-image: url('https://fps.cdnpk.net/home/cover/image-13.webp?w=1400&h=438');
+}
+
+.slide-2 {
+  background-image: url('https://fps.cdnpk.net/home/cover/image-13.webp?w=1400&h=438');
+}
+
+.slide-3 {
+  background-image: url('https://fps.cdnpk.net/home/cover/image-13.webp?w=1400&h=438');
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 50%;
+  
+
+}

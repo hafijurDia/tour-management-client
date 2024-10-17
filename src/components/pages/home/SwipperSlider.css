@@ -1,0 +1,104 @@
+/* SwiperSlider.css */
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .animated-title {
+ 
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInDown 1s forwards;
+  }
+  .animated-country {
+ 
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInDown 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .animated-description {
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .animated-button {
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1s;
+  }
+  
+/* SwipperSlider.css */
+
+/* Style for the navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -25px;
+  z-index: 10;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next {
+  right: 20px;
+
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+/* Ensure that the buttons are visible on top of the slides */
+.slide-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+  @keyframes fadeInDown {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

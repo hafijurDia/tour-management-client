@@ -1,0 +1,9 @@
+.active-tab {
+    border-bottom: 2px solid rgb(22 163 74); /* Indigo color for active tab */
+    color: rgb(22 163 74); /* Indigo color for active text */
+  }
+  .small-title{
+    font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  }
